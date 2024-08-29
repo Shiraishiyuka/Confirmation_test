@@ -1,0 +1,61 @@
+* {
+    font-family: "Inika", serif;
+}
+
+.content {
+    width: 1381px;
+        height: 365px;
+        margin: 319px 66px 319px 66px;
+        top: 319px;
+        left: 66px;
+        gap: 0px;
+        opacity: 0px;
+}
+
+.text1::before {
+        font-size: 280px;
+        font-weight: 400;
+        line-height: 364.84px;
+        text-align: center;
+        color: #8B7969;
+        content: 'Thank you';
+        z-index: -1;
+        opacity: 0.1;
+        position: relative;
+}
+
+.text2 {
+    font-size: 40px;
+    color: #8B7969;
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top:450px;
+    left:500px;
+}
+
+.home {
+    margin-top: 30px;
+        padding: 10px 40px 10px 40px;
+        width: 0300px;
+        height: 200px;
+        text-align: center;
+        border: none;
+        background: #82756A;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+}
+
+.button {
+    padding: 20px 60px 20px 50px;
+}
+.form__button-submit {
+        margin: 5px 640px 10px 640px;
+        width: 150px;
+        height: 50px;
+        background: #82756A;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+}

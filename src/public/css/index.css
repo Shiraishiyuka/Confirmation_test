@@ -1,0 +1,522 @@
+
+/*contact*/
+.contact {
+    padding-top: 70px;
+    margin-bottom: 50px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 45.61px;
+}
+
+.contact_text {
+    color: #8B7969;
+}
+
+/*フォームの内容*/
+
+.form_box {
+    width: 972px;
+        height: 606px;
+        top: 247px;
+        left: 273px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        margin: 0 270px 0 270px;
+}
+
+/*共通項目*/
+.form__input--form-textarea,
+input {
+    background-color: #F4F4F4;
+    border: none;
+    font-family: Inika;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.24px;
+        text-align: left;
+}
+
+.form__input--form-textarea {
+    border: 0px 0px 30px 600px;
+}
+
+/*ラベルの✴︎を後ろに入れる*/
+span::after {
+            content: "※";
+            font-family: Inika;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26.06px;
+            margin-left: 5px;
+            color: #FF9494;
+}
+
+
+/*エラーの設定*/
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+    margin-left: 355px;
+}
+
+/*名前の入力欄*/
+.form__label--item {
+    width: 125.91px;
+    height: 26px;
+    top: 253px;
+    left: 274.54px;
+    gap: 0px;
+    opacity: 0px;
+    margin-right: 230px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+}
+
+.form__group-content {
+    width: 618px;
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    color: #8B7969;
+
+}
+
+.form__group_name {
+    width: 967.39px;
+    height: 40px;
+    top: 247px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+ 
+}
+
+.last_name {
+    width: 287.15px;
+    height: 38px;
+    top: 247px;
+    left: 101px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    color: #8B7969;
+}
+
+.first_name {
+    width: 287.15px;
+    height: 38px;
+    top: 247px;
+    left: 500px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    color: #8B7969;
+}
+
+
+/*性別*/
+.form__group_gender {
+    width: 737.06px;
+    height: 40px;
+    top: 317px;
+    left: 274.54px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+}
+
+.form__label--gender {
+    width: 95.2px;
+    height: 26px;
+    top: 317px;
+    left: 274.54px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    margin-right: 270px;
+}
+
+.group-gender {
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio_group {
+    width: 80px;
+}
+
+
+.check {
+    width: 20px;
+    height: 20px;
+    top: 321px;
+    left: 636.57px;
+    gap: 0px;
+    opacity: 0px;
+    margin-right: 10px;
+
+}
+
+
+/*メールアドレス*/
+.form__group_email {
+    width: 967.39px;
+    height: 40px;
+    top: 374px;
+    left: 273px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+}
+
+.form__label--email {
+    width: 260px;
+    height: 26px;
+    top: 380px;
+    left: 273px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    margin-right: 180px;
+}
+
+.email {
+    width: 618.82px;
+    height: 38px;
+    top: 374px;
+    left: 621.57px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    color: #8B7969;
+}
+
+
+/*電話*/
+.form__group_tell {
+    width: 967.39px;
+    height: 40px;
+    top: 445px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+}
+
+.form__label--tell {
+    width: 156.63px;
+    height: 26px;
+    top: 451px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    margin-right: 200px;
+}
+
+.group-tell {
+    width: 618px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    width: 10.75px;
+        height: 26px;
+        top: 451px;
+        left: 819.65px;
+        gap: 0px;
+        opacity: 0px;
+        font-family: Inika;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26.06px;
+            text-align: left;
+            color: #8B7969;
+}
+
+
+
+.tell1 {
+    width: 178.12px;
+    height: 38px;
+    top: 445px;
+    left: 624.64px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    color: #8B7969;
+}
+
+.tell2 {
+    width: 178.12px;
+    height: 38px;
+    top: 445px;
+    left: 845.76px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    color: #8B7969;
+}
+
+.tell3 {
+    width: 178.12px;
+    height: 38px;
+    top: 445px;
+    left: 1066.88px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    color: #8B7969;
+}
+
+
+
+
+
+/*住所*/
+.form__group_address {
+    width: 967.39px;
+    height: 40px;
+    top: 445px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+}
+
+.form__label--address {
+    width: 95.2px;
+    height: 26px;
+    top: 519px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    margin-right: 260px;
+
+}
+
+.group-address {
+    width: 618.82px;
+    height: 38px;
+    top: 513px;
+    left: 624.64px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.address {
+    width: 618.82px;
+    height: 38px;
+    top: 513px;
+    left: 624.64px;
+    gap: 0px;
+    opacity: 0px;
+    color: #8B7969;
+    padding-left: 30px;
+}
+
+
+/*建物名*/
+.form__group_building {
+    width: 964.32px;
+    height: 40px;
+    top: 583px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+}
+
+.form__label--building {
+    width: 120px;
+    height: 26px;
+    top: 589px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    margin-right: 240px;
+}
+
+.group-building {
+    width: 620.36px;
+    height: 38px;
+    top: 583px;
+    left: 621.57px;
+    gap: 0px;
+    opacity: 0px;
+    color: #8B7969;
+}
+
+.building {
+    width: 620.36px;
+    height: 38px;
+    top: 583px;
+    left: 621.57px;
+    gap: 0px;
+    opacity: 0px;
+    padding-left: 30px;
+    color: #8B7969;
+}
+
+
+
+/*お問合せの種類*/
+
+.form__group_inquiry {
+    width: 675.64px;
+    height: 40px;
+    top: 654px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+}
+
+.form__label--inquiry {
+    width: 350px;
+    height: 26px;
+    top: 660px;
+    left: 277.61px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    margin-right: 160px;
+}
+.inquiry {
+    width: 331.68px;
+    height: 38px;
+    top: 654px;
+    left: 621.57px;
+    gap: 0px;
+    opacity: 0px;
+    background: #F4F4F4;
+    padding-left: 30px;
+    border: none;
+    color: #8B7969;
+}
+
+
+/*お問合せ内容*/
+.form__group_content {
+    width: 962.78px;
+    height: 129px;
+    top: 724px;
+    left: 282.22px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: left;
+    color: #8B7969;
+}
+
+.form__label--content {
+    width: 279.47px;
+    height: 26px;
+    top: 732px;
+    left: 282.22px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    margin-right: 100px;
+}
+
+.content {
+    width: 618.82px;
+    height: 129px;
+    top: 724px;
+    left: 626.18px;
+    gap: 0px;
+    opacity: 0px;
+    background: #F4F4F4;
+    border: none;
+    padding: 10px 0 0 30px;
+    color: #8B7969;
+}
+
+.form__input--textarea  {
+    border: 0px 0px 30px 600px;
+}
+
+/*確認画面ようのボタン*/
+.button {
+    
+    width:160px;
+    height:46px;
+    top: 903px;
+    left: 674px;
+    gap: 10px;
+    opacity: 0px;
+    background: #82756A;
+    margin: 60px 676px 0 676px;
+    display: flex;
+}
+
+.button-submit {
+    width: 160px;
+    height: 26px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background: #82756A;
+    text-align: center;
+    border: none;
+}
