@@ -18,7 +18,6 @@ use App\Http\Controllers\LoginController;
 
 Route::get('/',[ContactController::class, 'index']);
 Route::post('/confirm',[ContactController::class, 'confirm']);
-Route::get('/thanks',[ContactController::class, 'create'])->name('thanks.show');
 Route::post('/thanks',[ContactController::class, 'create'])->name('thanks.show');
 
 Route::group(['middleware' => ['auth']], function () {

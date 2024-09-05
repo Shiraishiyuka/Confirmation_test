@@ -52,6 +52,19 @@
                     
                 </table>
 
+                 @csrf
+        <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
+        <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
+        <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
+        <input type="hidden" name="email" value="{{ $contact['email'] }}">
+        <input type="hidden" name="tell1" value="{{ $contact['tell1'] }}">
+        <input type="hidden" name="tell2" value="{{ $contact['tell2'] }}">
+        <input type="hidden" name="tell3" value="{{ $contact['tell3'] }}">
+        <input type="hidden" name="address" value="{{ $contact['address'] }}">
+        <input type="hidden" name="building" value="{{ $contact['building'] }}">
+        <input type="hidden" name="inquiry" value="{{ $contact['inquiry'] }}">
+        <input type="hidden" name="content" value="{{ $contact['content'] }}">
+
                 <!--確認後の送信ボタン-->
                 <div class="box">
                 <div class="form__button">
@@ -64,20 +77,6 @@
                 <a href="" onclick="event.preventDefault(); document.getElementById('back-form').submit();">修正</a>
                 </div>
                 </div>
-            
-            
-            <form id="back-form" action="{{ url()->previous() }}" method="get" style="display: none;">
-        @csrf
-        <input type="hidden" name="first_name" value="{{ old('first_name') }}">
-        <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
-        <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
-        <input type="hidden" name="email" value="{{ $contact['email'] }}">
-        <input type="hidden" name="tell" value="{{ $contact['tell1'] }}">
-        <input type="hidden" name="tell" value="{{ $contact['tell2'] }}">
-        <input type="hidden" name="tell" value="{{ $contact['tell3'] }}">
-        <input type="hidden" name="address" value="{{ $contact['address'] }}">
-        <input type="hidden" name="building" value="{{ $contact['building'] }}">
-        <input type="hidden" name="inquiry" value="{{ $contact['inquiry'] }}">
-        <input type="hidden" name="content" value="{{ $contact['content'] }}">
+       
     </form>
             @endsection

@@ -16,15 +16,20 @@ class ContactController extends Controller
       //問い合わせフォーム確認ページの表示//
     public function confirm(ContactRequest $request)
     {
-        $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tell1', 'tell2', 'tell3',  'address', 'building', 'inquiry','content']);
+        
+        $contact = $request->all();
         return view('confirm',compact('contact'));
     }
 
     public function create(Request $request)
     {
-        $contact = $request->only(['first_name', 'last_name', 'gender', 'email', 'tell1', 'tell2', 'tell3',  'address', 'building', 'inquiry','content']);
+       $request['tell'] = $request->tell1 . $request->tell2 . $request->tell3;
+        $contact = $request->only([
+        'first_name', 'last_name', 'gender', 'email', 'tell',  'address', 'building', 'inquiry', 'content'
+    ]);
+    
         Contact::create($contact);
-        return redirect('/thanks');
+        return view('thanks');
     }
 
     /*adminの検索機能*/

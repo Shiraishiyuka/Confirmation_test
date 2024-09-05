@@ -15,7 +15,7 @@
     <div class="content">
         <div class="text1"></div>
         <div class="text2">お問合せありがとうございました</div>
-        <form action="/" method="post">
+        <form action="/" method="get">
             @csrf
             <div class="button">
             <button class="form__button-submit" type="submit">HOME</button>
