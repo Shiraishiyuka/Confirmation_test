@@ -23,6 +23,7 @@ class ContactFactory extends Factory
 
         return [
             'first_name' => $this->faker->firstName,
+            'last_name' => $this->faker->lastName,
             'gender' => $this->faker->randomElement(['男性','女性','その他']),
             'email' => $this->faker->safeEmail,
             'tell' => $this->faker->phoneNumber,

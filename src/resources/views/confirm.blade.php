@@ -15,7 +15,7 @@
                 <table>
                     <tr>
                         <th>お名前</th>
-                          <td>{{ $contact['last_name'] }} {{ $contact['first_name'] }}</td>
+                          <td>{{ $contact['last_name'] }}&nbsp;{{ $contact['first_name'] }}</td>
                     </tr>
                     <tr>
                         <th>性別</th>

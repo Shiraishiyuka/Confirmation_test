@@ -1,0 +1,376 @@
+.return_button {
+    width: 100px;
+    margin-left: 420px
+}
+
+.return_button-submit {
+    width: 100px;
+    height: 34px;
+    border: none;
+    background: #e6dacf;
+    color: #bc9a7d;
+    cursor: pointer;
+    border: 1px solid #e6dacf;
+}
+
+.detail_button {
+    width: 76px;
+    height: 39px;
+    top: 441px;
+    left: 1213px;
+    gap: 10px;
+    opacity: 0px;
+    background: #F4F4F44D;
+    border: 1px solid #D9C6B599;
+
+    text-align: center;
+    align-items: center;
+
+}
+
+a {
+    color: #8B7969;
+    text-align: center;
+}
+
+/*contact*/
+.contact {
+    padding-top: 70px;
+    margin-bottom: 50px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 45.61px;
+}
+
+.contact_text {
+    color: #8B7969;
+}
+
+
+
+.main_inner {
+    width: 1183px;
+    margin: 0 164px 0 164px;
+}
+
+
+.index {
+    width: 1183px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.page {
+    width: 1183px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.pagination {
+    width: 300px;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    width: 32px;
+    height: 31px;
+    top: 306px;
+    left: 1161px;
+    gap: 0px;
+    opacity: 0px;
+    border: 1px solid #8B7969;
+    text-align: center;
+}
+
+.admin {
+    margin-bottom: 30px;
+}
+
+.search_box {
+    width: 917.01px;
+    height: 50px;
+    top: 215px;
+    left: 164px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search {
+    width: 347.47px;
+    height: 50px;
+    top: 215px;
+    left: 164px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #E3DED9;
+    background: #E1DBD699;
+    text-align: center;
+
+}
+
+.search_gender {
+    width: 102.48px;
+    height: 50px;
+    top: 215px;
+    left: 542.9px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #E3DED9;
+    background: #E1DBD699;
+    color: #8B7969;
+    text-align: center;
+}
+
+.search_categories {
+    width: 223.04px;
+    height: 50px;
+    top: 215px;
+    left: 677.24px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #E3DED9;
+    background: #E1DBD699;
+    color: #8B7969;
+    text-align: center;
+}
+
+.search_date {
+    width: 148.87px;
+    height: 50px;
+    top: 215px;
+    left: 932.14px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #E3DED9;
+    background: #E1DBD699;
+    color: #8B7969;
+    text-align: center;
+}
+
+.search_button {
+    width: 102.48px;
+    height: 50px;
+    top: 215px;
+    left: 1112px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #8B7969;
+    background: #8B7969;
+    color: #fff;
+}
+
+.reset {
+    width: 102.48px;
+    height: 50px;
+    top: 215px;
+    left: 1245.52px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #e5d4c5;
+    background: #D9C6B5;
+    color: #fff;
+}
+
+.box {
+    width: 148px;
+    height: 39px;
+    top: 302px;
+    left: 164px;
+    padding: 8px 20px 8px 20px;
+    gap: 10px;
+    opacity: 0px;
+    background: #E1DBD699;
+    margin-top: 16px;
+    border: none;
+}
+
+.index_box {
+    width: 1183px;
+    height: 570px;
+    top: 364px;
+    left: 163px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #E0DFDE
+}
+
+.index_mene {
+    width: 1183px;
+    height: 59px;
+    margin-bottom: 30px;
+    top: 364px;
+    left: 164px;
+    gap: 0px;
+    opacity: 0px;
+    background: #8B7969;
+    display: flex;
+    align-items: center;
+}
+
+.index_mene_inner {
+    width: 1062px;
+    height: 26px;
+    top: 382px;
+    left: 219px;
+    opacity: 0px;
+    margin: 0 60px 0 60px;
+    display: flex;
+
+}
+
+.name {
+    width: 200px;
+    height: 26px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26.06px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.gender {
+    width: 180px;
+    height: 26px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26.06px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.email {
+    width: 400px;
+    height: 26px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26.06px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.content {
+    width: 200px;
+    height: 26px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26.06px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.table {
+    width: 1062px;
+    margin: 0 60px 0 60px;
+}
+
+.index_content {
+    width: 1062px;
+    height: auto;
+    display: flex;
+    margin-bottom: 32px;
+
+}
+
+.name_content {
+    width: 200px;
+    height: 16.94px;
+    top: 447px;
+    left: 221px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    color: #8B7969;
+}
+
+.gender_content {
+    width: 180px;
+    height: 16.94px;
+    top: 447px;
+    left: 401px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.06px;
+    text-align: left;
+    color: #8B7969;
+}
+
+.email_content {
+    width: 360px;
+    height: 18.25px;
+    top: 447px;
+    left: 561px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #8B7969;
+}
+
+.inquiry_content {
+    width: 230px;
+    height: 18.25px;
+    top: 447px;
+    left: 843px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #8B7969;
+}
+
+/*paginateメソッドの矢印の大きさ調整のために追加*/
+svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+

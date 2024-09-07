@@ -136,5 +136,51 @@ class ContactController extends Controller
 
             return redirect('/admin')->with('success', '削除に成功しました');
         }
+
+        
+
+         public function test(Request $request)
+    {
+        $query = Contact::query();
+
+        if ($request->filled('look')) {
+        $query->where(function ($q) use ($request) {
+            $q->where('first_name', 'like', '%' . $request->look . '%')
+              ->orWhere('last_name', 'like', '%' . $request->look . '%')
+              ->orWhere('email', 'like', '%' . $request->look . '%');
+        });
+    }
+
+            if ($request->filled('gender') && $request->gender !== '全て') {
+                $query->where('gender', $request->gender);
+            }
+
+            if ($request->filled('inquiry')) {
+                $query->where('inquiry', $request->inquiry);
+            }
+
+            if ($request->filled('create_date')) {
+                $query->whereDate('created_at' , $request->create_date);
+            }
+
+            /*ページネーション*/
+            $contacts = $query->paginate(7)->onEachSide(5);
+
+            return view('test', [
+                'contacts' => $contacts,
+                'look' => $request->look,
+                'gender' => $request->gender,
+                'inquiry' => $request->inquiry,
+                'create_date' => $request->create_date,
+            ]);
+        }
+
+        public function no($id)
+    {
+        $contact = Contact::findOrFail($id);
+        $contact->delete();
+
+        return redirect('/test');
+    }
     }
 

@@ -20,6 +20,12 @@ Route::get('/',[ContactController::class, 'index']);
 Route::post('/confirm',[ContactController::class, 'confirm']);
 Route::post('/thanks',[ContactController::class, 'create'])->name('thanks.show');
 
+Route::match(['get', 'post'], '/test', [ContactController::class, 'test'])->name('test');
+ROute::delete('/delete/{id}', [ContactController::class, 'no'])->name('contact.delete');
+
+
+
+
 Route::group(['middleware' => ['auth']], function () {
     Route::match(['get', 'post'], '/admin', [ContactController::class, 'admin'])->name('admin');
     Route::get('/admin/{id}', [ContactController::class, 'show'])->name('admin.show');
