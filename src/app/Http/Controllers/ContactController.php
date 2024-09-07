@@ -5,12 +5,14 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest; 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\Category;
 use Symfony\Component\HttpFoundation\StreamedResponse; 
 
 class ContactController extends Controller
 {
     public function index(){
-        return view('index');
+        $categories = Category::all();
+        return view('index', compact('categories'));
     }
 
       //問い合わせフォーム確認ページの表示//
@@ -18,14 +20,15 @@ class ContactController extends Controller
     {
         
         $contact = $request->all();
-        return view('confirm',compact('contact'));
+        $category = Category::find($request->category_id);
+        return view('confirm',compact('contact', 'category'));
     }
 
     public function create(Request $request)
     {
        $request['tell'] = $request->tell1 . $request->tell2 . $request->tell3;
         $contact = $request->only([
-        'first_name', 'last_name', 'gender', 'email', 'tell',  'address', 'building', 'inquiry', 'content'
+        'first_name', 'last_name', 'gender', 'email', 'tell',  'address', 'building', 'category_id', 'content'
     ]);
     
         Contact::create($contact);

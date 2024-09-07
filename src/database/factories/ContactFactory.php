@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Contact;
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ContactFactory extends Factory
@@ -29,7 +30,7 @@ class ContactFactory extends Factory
             'tell' => $this->faker->phoneNumber,
             'address' => $this->faker->city,
             'building' => $this->faker->secondaryAddress,
-            'inquiry' => $this->faker->randomElement(['商品のお届けについて','商品の交換について','商品トラブル','ショップへのお問い合わせ','その他']),
+            'category_id' => Category::inRandomOrder()->first()->id,
             'content' => $this->faker->randomElement(['届いた商品が注文した商品でありませんでした']),
         ];
     

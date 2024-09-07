@@ -14,25 +14,20 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
-        $box = [
-            'content' => '商品のお届けについて',
+        //重複を避けるためにinsertではなく`firstOrCreate` を使用
+        $categories = [
+            '商品のお届けについて',
+            '商品の交換について',
+            '商品トラブル',
+            'ショップへのお問い合わせ',
+            'その他'
         ];
-        DB::table('categories')->insert($box);
-        $box = [
-            'content' => '商品の交換について',
-        ];
-        DB::table('categories')->insert($box);
-        $box = [
-            'content' => '商品トラブル',
-        ];
-        DB::table('categories')->insert($box);
-        $box = [
-            'content' => 'ショップへのお問い合わせ',
-        ];
-        DB::table('categories')->insert($box);
-        $box = [
-            'content' => 'その他',
-        ];
-        DB::table('categories')->insert($box);
+
+        foreach ($categories as $category) {
+            DB::table('categories')->updateOrInsert(
+                ['content' => $category],
+                ['content' => $category]
+            );
+        }
     }
 }

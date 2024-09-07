@@ -9,13 +9,8 @@ class Contact extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'first_name', 'last_name', 'gender', 'email', 'tell', 'address', 'building', 'inquiry', 'content'
+        'first_name', 'last_name', 'gender', 'email', 'tell', 'address', 'building', 'category_id', 'content'
     ];
 
-    /*
-
-    public function setTelAttribute($name)
-    {
-        $this->attributes['tell'] = $name['tell1'] . $name['tell2']. $name['tell3'];
-    }*/
+    
 }

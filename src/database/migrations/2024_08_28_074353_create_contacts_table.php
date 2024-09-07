@@ -15,6 +15,7 @@ class CreateContactsTable extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
             $table->string('first_name',255);
             $table->string('last_name', 255);
             $table->enum('gender',['男性','女性','その他']);
@@ -22,7 +23,6 @@ class CreateContactsTable extends Migration
             $table->string('tell',255);
             $table->string('address', 255);
             $table->string('building',255)->nullable();
-            $table->string('inquiry');
             $table->text('content');
             $table->timestamps();
         });

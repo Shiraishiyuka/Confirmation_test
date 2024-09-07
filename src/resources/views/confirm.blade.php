@@ -39,7 +39,7 @@
                     </tr>
                     <tr>
                         <th>お問合せの種類</th>
-                        <td>{{ $contact['inquiry'] }}</td>
+                        <td>{{ $category->content }}</td>
                     </tr>
                     <tr>
                         <th>お問合せの内容</th>
@@ -62,7 +62,7 @@
         <input type="hidden" name="tell3" value="{{ $contact['tell3'] }}">
         <input type="hidden" name="address" value="{{ $contact['address'] }}">
         <input type="hidden" name="building" value="{{ $contact['building'] }}">
-        <input type="hidden" name="inquiry" value="{{ $contact['inquiry'] }}">
+        <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
         <input type="hidden" name="content" value="{{ $contact['content'] }}">
 
                 <!--確認後の送信ボタン-->
